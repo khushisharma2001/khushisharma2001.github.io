@@ -1,257 +1,1164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khushi Sharma - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <style>
-    body { scroll-behavior: smooth; font-family: 'Poppins', sans-serif; }
-    .name-title { color: #10B981; font-weight: 800; letter-spacing: 1px; }
-    .section-title { color: #0F766E; }
-    .hover-scale { transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; }
-    .hover-scale:hover { transform: translateY(-6px); box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); }
-    .bg-gradient-section { background: linear-gradient(135deg, #FEFCE8 0%, #F5F5F4 100%); }
-    .nav-link { transition: color 0.3s ease-in-out; }
-    .nav-link:hover { color: #6EE7B7; }
-    .card-border { border: 1px solid transparent; border-image: linear-gradient(to right, #10B981, #6EE7B7) 1; }
-    .button-gradient { background: linear-gradient(135deg, #10B981 0%, #34D399 100%); }
-    .button-gradient:hover { background: linear-gradient(135deg, #059669 0%, #10B981 100%); }
-    .section-divider { border-top: 2px solid transparent; border-image: linear-gradient(to right, #10B981, #6EE7B7) 1; margin: 2rem 0; }
-    .fade-in { animation: fadeIn 1s ease-in; }
-    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
-    nav { border-radius: 0 0 8px 8px; }
-  </style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Khushi Sharma | AI & Data Developer</title>
+
+    <meta name="description"
+        content="AI & Data Developer | Machine Learning Engineer | Data Engineer">
+
+    <meta name="keywords"
+        content="AI, Machine Learning, Python, Azure OpenAI, SQL Server, ETL, Data Engineering">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="style.css">
+
 </head>
-<body class="bg-gray-50">
-  <!-- Header -->
-  <nav class="bg-emerald-900 text-white p-6 sticky top-0 z-10 shadow-lg">
-    <div class="container mx-auto flex justify-end items-center">
-      <div class="flex space-x-6">
-        <a href="#about" class="nav-link text-lg font-medium">About</a>
-        <a href="#experience" class="nav-link text-lg font-medium">Experience</a>
-        <a href="#education" class="nav-link text-lg font-medium">Education</a>
-        <a href="#projects" class="nav-link text-lg font-medium">Projects</a>
-        <a href="#skills" class="nav-link text-lg font-medium">Skills</a>
-        <a href="#publications" class="nav-link text-lg font-medium">Publications</a>
-        <a href="#references" class="nav-link text-lg font-medium">References</a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- About Section -->
-  <section id="about" class="py-24 px-4 bg-gradient-section fade-in">
-    <div class="container mx-auto max-w-4xl text-center">
-      <h1 class="name-title text-7xl font-extrabold mb-6">Khushi Sharma</h1>
-      <h2 class="section-title text-4xl font-bold mb-8">About Me</h2>
-      <p class="text-lg text-gray-800 mb-6 max-w-2xl mx-auto">
-        Passionate computer science engineer specializing in Large Language Models (LLMs), machine learning, and artificial intelligence research. Focused on designing innovative solutions through advanced algorithms and data-driven insights.
-      </p>
-      <div class="flex flex-col items-center space-y-6">
-        <p class="text-gray-600">
-          <strong>Contact:</strong> +3530899459200 | 20khushisharma01@gmail.com | Ireland
-        </p>
-        <div class="flex space-x-6">
-          <a href="https://www.linkedin.com/in/khushi-sharma" class="text-emerald-600 hover:text-emerald-800 transition">
-            <i class="fab fa-linkedin fa-lg"></i> LinkedIn
-          </a>
-          <a href="https://github.com/khushisharma2001" class="text-emerald-600 hover:text-emerald-800 transition">
-            <i class="fab fa-github fa-lg"></i> GitHub
-          </a>
-        </div>
-        <div class="flex space-x-4">
-          <a href="https://drive.google.com/uc?export=download&id=1TsXqgGRuJOr3_J9n5tJ9G2HcCefFVAEx" download class="button-gradient text-white px-6 py-3 rounded-full transition flex items-center">
-            <i class="fas fa-download mr-2"></i> Download Resume
-          </a>
-          <a href="https://drive.google.com/file/d/1TsXqgGRuJOr3_J9n5tJ9G2HcCefFVAEx/view?usp=sharing" target="_blank" class="bg-gray-700 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition flex items-center">
-            <i class="fas fa-eye mr-2"></i> Preview Resume
-          </a>
-        </div>
-      </div>
-      <div class="section-divider"></div>
-    </div>
-  </section>
+<body>
 
-  <!-- Experience Section -->
-  <section id="experience" class="py-24 px-4 bg-white fade-in">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="section-title text-4xl font-bold mb-10 text-center">Work Experience</h2>
-      <div class="space-y-8">
-        <div class="bg-gray-50 p-8 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-2xl font-semibold text-gray-800">Artificial Intelligence Engineer</h3>
-          <p class="text-gray-600">Open Health Systems Laboratory (OHSL), United States | May 2022 - Jun 2024</p>
-          <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Developed and fine-tuned AI models.</li>
-            <li>Optimized pre-trained models for text generation, summarization, and sentiment analysis.</li>
-            <li>Integrated AI-driven solutions into research projects, enhancing accuracy and efficiency.</li>
-            <li>Collaborated with cross-functional teams to deploy AI models for real-world healthcare solutions.</li>
-            <li>Conducted research and presented findings to technical and non-technical stakeholders.</li>
-          </ul>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-2xl font-semibold text-gray-800">Cyber Security Intern</h3>
-          <p class="text-gray-600">IFSO/CCU Delhi Police Cyber Crime Cell, Central Govt. of India, New Delhi, India | Jan 2023 - Jul 2023</p>
-          <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Studied and applied cybersecurity principles, focusing on strategies to safeguard sensitive information and maintain data integrity.</li>
-            <li>Worked under professionals to gain deeper insights into cybersecurity concepts and their importance.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="section-divider"></div>
-    </div>
-  </section>
+    <!-- ================= NAVBAR ================= -->
 
-  <!-- Education Section -->
-  <section id="education" class="py-24 px-4 bg-gradient-section fade-in">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="section-title text-4xl font-bold mb-10 text-center">Education</h2>
-      <div class="space-y-8">
-        <div class="bg-white p-8 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-2xl font-semibold text-gray-800">Masters in Software Design in AI</h3>
-          <p class="text-gray-600">Technological University of the Shannon (TUS), Ireland | Sep 2024 - Present</p>
-          <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Specialization in Artificial Intelligence, focusing on AI Research, LLM applications, and Generative AI techniques.</li>
-            <li>Coursework includes Natural Language Processing (NLP), AI Ethics, and Machine Learning.</li>
-            <li>Engaged in research projects related to machine learning and real-world problem-solving.</li>
-          </ul>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-2xl font-semibold text-gray-800">Bachelors in Computer Science Engineering</h3>
-          <p class="text-gray-600">Amity University, India | Sep 2020 - Jun 2024</p>
-          <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Focused on Data Structures, Core Computer Science Concepts, and the Fundamentals of AI & ML Research.</li>
-            <li>Coursework included Algorithms, Operating Systems, Machine Learning, and Python.</li>
-            <li>Developed foundational expertise in AI/ML applications, including predictive modeling and data-driven decision-making.</li>
-            <li>Research: Published a Scopus-indexed paper on "Heart Disease Prediction Using Machine Learning Algorithms."</li>
-          </ul>
-        </div>
-      </div>
-      <div class="section-divider"></div>
-    </div>
-  </section>
+    <nav class="navbar">
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-24 px-4 bg-white fade-in">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="section-title text-4xl font-bold mb-10 text-center">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-xl font-semibold text-gray-800">Interactive Search Engine Using RAG and LLMs</h3>
-          <p class="mt-2 text-gray-700">Retrieves and processes documents from web URLs using LangChain, Hugging Face Embeddings, and ChromaDB for efficient text processing.</p>
-          <p class="mt-2 text-gray-600"><strong>Technologies:</strong> LangChain</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-xl font-semibold text-gray-800">Website Chatbot</h3>
-          <p class="mt-2 text-gray-700">Designed a chatbot for real-time information retrieval and query resolution, implementing NLP techniques to improve response accuracy and user experience.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-xl font-semibold text-gray-800">Document Processing Question Answering System</h3>
-          <p class="mt-2 text-gray-700">Built an AI-powered system to summarize large documents into concise insights, reducing summary generation time by 30%.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-xl font-semibold text-gray-800">Heart Disease Prediction System Using ML Algorithms</h3>
-          <p class="mt-2 text-gray-700">Developed a predictive model using Random Forest and SVM, achieving 85% accuracy, trained on real-world datasets to assess heart disease risks.</p>
-        </div>
-      </div>
-      <div class="section-divider"></div>
-    </div>
-  </section>
+        <div class="container">
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-24 px-4 bg-gradient-section fade-in">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="section-title text-4xl font-bold mb-10 text-center">Skills</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-xl font-semibold text-gray-800">Technical Skills</h3>
-          <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Python</li>
-            <li>NLP</li>
-            <li>Machine Learning</li>
-            <li>AI Model Fine-Tuning</li>
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
-            <li>Google Workspace</li>
-            <li>LangChain</li>
-            <li>OpenAI API</li>
-            <li>GPT-based models</li>
-            <li>Fine-Tuning LLMs</li>
-            <li>Prompt Engineering</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-xl font-semibold text-gray-800">Research Skills</h3>
-          <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>AI & ML Research</li>
-            <li>Academic Paper Writing</li>
-            <li>Scientific Analysis</li>
-            <li>Biomedical Research</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <h3 class="text-xl font-semibold text-gray-800">Soft Skills & Languages</h3>
-          <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Leadership</li>
-            <li>Teamwork</li>
-            <li>Analytical Thinking</li>
-            <li>Decision-Making</li>
-            <li>Problem-Solving</li>
-            <li>English: Fluent</li>
-            <li>Hindi: Native</li>
-          </ul>
-        </div>
-      </div>
-      <div class="section-divider"></div>
-    </div>
-  </section>
+            <a href="#"
+                class="logo">
 
-  <!-- Publications Section -->
-  <section id="publications" class="py-24 px-4 bg-white fade-in">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="section-title text-4xl font-bold mb-10 text-center">Publications</h2>
-      <div class="bg-gray-50 p-6 rounded-xl shadow-md hover-scale card-border">
-        <h3 class="text-xl font-semibold text-gray-800">Heart Disease Prediction System Using Machine Learning Algorithms</h3>
-        <p class="text-gray-600 mt-2">International Conference On Networks, Intelligence & Computing (ICONIC-2023) | Nov 2023</p>
-      </div>
-      <div class="section-divider"></div>
-    </div>
-  </section>
+                Khushi<span>.</span>
 
-  <!-- References Section -->
-  <section id="references" class="py-24 px-4 bg-gradient-section fade-in">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="section-title text-4xl font-bold mb-10 text-center">References</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <p class="text-gray-800"><strong>Dr. Paul Jacob</strong>, Lecturer, Technological University of the Shannon, Ireland</p>
-          <p class="text-gray-600">Email: paul.jacob@tus.ie</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <p class="text-gray-800"><strong>Dr. Cormac MacGiollaEain</strong>, Lecturer, Technological University of the Shannon, Ireland</p>
-          <p class="text-gray-600">Email: cormac.macgiollaeain@tus.ie</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <p class="text-gray-800"><strong>Dr. Gerry Hanley</strong>, Executive Director, MERLOT & SkillsCommons, CSULB, USA</p>
-          <p class="text-gray-600">Email: Gerry.Hanley@csulb.edu | Phone: +1 562 335-3347</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <p class="text-gray-800"><strong>Anil Srivastava</strong>, CEO, Open Health Systems Laboratory, USA</p>
-          <p class="text-gray-600">Email: anil.srivastava@ohsl.us | Phone: +1 2404633686</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-md hover-scale card-border">
-          <p class="text-gray-800"><strong>Dr. Anandan Natarajan</strong>, Consultant Respiratory & General Physician, Mater Misericordiae University Hospital, Ireland</p>
-          <p class="text-gray-600">Email: anandannatarajan@mater.ie | Phone: 0872141853</p>
-        </div>
-      </div>
-      <div class="section-divider"></div>
-    </div>
-  </section>
+            </a>
 
-  <!-- Footer -->
-  <footer class="bg-emerald-900 text-white text-center p-6 fade-in">
-    <p>© 2025 Khushi Sharma. All rights reserved.</p>
-  </footer>
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#experience">Experience</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#education">Education</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <button id="theme-toggle">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home"
+        class="hero">
+
+        <div class="container hero-grid">
+
+            <div class="hero-text">
+
+                <span class="tag">
+
+                    AI • Machine Learning • Data Engineering
+
+                </span>
+
+                <h1>
+
+                    Hi, I'm
+
+                    <span>
+
+                        Khushi Sharma
+
+                    </span>
+
+                </h1>
+
+                <h2>
+
+                    AI & Data Developer
+
+                </h2>
+
+                <p>
+
+                    AI & Data Developer with experience building enterprise AI
+                    applications, Python automation, Azure OpenAI chatbots,
+                    SQL Server databases and scalable ETL pipelines.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects"
+                        class="btn">
+
+                        View Projects
+
+                    </a>
+
+                    <a href="assets/Khushi_Sharma_Resume.pdf"
+                        target="_blank"
+                        class="btn btn-outline">
+
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+                <div class="social-icons">
+
+                    <a href="mailto:20khushisharma01@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                    <a href="https://github.com/khushisharma2001"
+                        target="_blank">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                    <a href="https://linkedin.com/in/khushi-sharma-a45b4a179"
+                        target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="assets/profile.jpg"
+                    alt="Khushi Sharma">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about"
+        class="about">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    About Me
+
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <p>
+
+                    I am currently working as an AI & Data Developer at CMS
+                    Distribution, where I build enterprise AI solutions using
+                    Azure OpenAI, Python, SQL Server and automation tools.
+
+                </p>
+
+                <p>
+
+                    Alongside industry experience, I work as an AI Research
+                    Associate at Open Health Systems Laboratory contributing to
+                    healthcare AI research and predictive modelling.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="skills">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Technical Skills</h2>
+
+                <p>
+
+                    Technologies I use to build intelligent enterprise
+                    applications.
+
+                </p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <h3>Artificial Intelligence</h3>
+
+                    <ul>
+
+                        <li>Machine Learning</li>
+
+                        <li>Azure OpenAI</li>
+
+                        <li>Prompt Engineering</li>
+
+                        <li>Large Language Models</li>
+
+                        <li>Scikit-Learn</li>
+
+                        <li>TensorFlow</li>
+
+                        <li>PyTorch</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h3>Programming</h3>
+
+                    <ul>
+
+                        <li>Python</li>
+
+                        <li>SQL</li>
+
+                        <li>REST APIs</li>
+
+                        <li>Pandas</li>
+
+                        <li>Data Structures</li>
+
+                        <li>API Integration</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h3>Data Engineering</h3>
+
+                    <ul>
+
+                        <li>SQL Server</li>
+
+                        <li>ETL Pipelines</li>
+
+                        <li>Data Validation</li>
+
+                        <li>Data Transformation</li>
+
+                        <li>SharePoint Automation</li>
+
+                        <li>Excel Automation</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <i class="fa-solid fa-cloud"></i>
+
+                    <h3>Cloud & Tools</h3>
+
+                    <ul>
+
+                        <li>Docker</li>
+
+                        <li>Azure</li>
+
+                        <li>Git</li>
+
+                        <li>GitHub</li>
+
+                        <li>Robotic Process Automation</li>
+
+                        <li>Debugging</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="experience">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Professional Experience</h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+
+                            September 2025 – Present
+
+                        </span>
+
+                        <h3>AI & Data Developer</h3>
+
+                        <h4>CMS Distribution | Ireland</h4>
+
+                        <ul>
+
+                            <li>Developed enterprise AI chatbot solutions using Azure OpenAI.</li>
+
+                            <li>Designed and maintained Python ETL pipelines.</li>
+
+                            <li>Automated SharePoint, Excel and CSV workflows.</li>
+
+                            <li>Built SQL Server stored procedures and optimized queries.</li>
+
+                            <li>Integrated enterprise applications using REST APIs.</li>
+
+                            <li>Implemented enterprise data validation and cleansing.</li>
+
+                            <li>Built Robotic Process Automation workflows.</li>
+
+                            <li>Containerized AI applications using Docker.</li>
+
+                            <li>Resolved production SQL and ETL issues.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+
+                            May 2025 – Present
+
+                        </span>
+
+                        <h3>AI Research Associate (Part-Time)</h3>
+
+                        <h4>Open Health Systems Laboratory (USA)</h4>
+
+                        <ul>
+
+                            <li>Contributed to the Digital Newborn AI Framework.</li>
+
+                            <li>Applied Machine Learning to Electronic Health Records.</li>
+
+                            <li>Performed healthcare AI research and predictive modelling.</li>
+
+                            <li>Collaborated with international researchers.</li>
+
+                            <li>Evaluated AI methodologies and literature.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+
+                            June 2023 – July 2023
+
+                        </span>
+
+                        <h3>Cyber Security Intern</h3>
+
+                        <h4>Delhi Police Cyber Crime Cell</h4>
+
+                        <ul>
+
+                            <li>Worked on cybersecurity fundamentals and secure systems.</li>
+
+                            <li>Learned information security best practices.</li>
+
+                            <li>Supported cyber awareness initiatives.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Featured Projects</h2>
+
+                <p>
+
+                    Enterprise AI, Data Engineering and Machine Learning projects.
+
+                </p>
+
+            </div>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+                    <h3>AI Customer Support Chatbot</h3>
+
+                    <p>
+
+                        Developed an enterprise chatbot using Azure OpenAI,
+                        Prompt Engineering and enterprise knowledge bases
+                        to provide accurate business information using
+                        natural language.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Azure OpenAI</span>
+
+                        <span>Python</span>
+
+                        <span>LLM</span>
+
+                        <span>REST API</span>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-database"></i>
+
+                    </div>
+
+                    <h3>Enterprise ETL Pipeline</h3>
+
+                    <p>
+
+                        Designed Python ETL pipelines to ingest,
+                        validate, transform and load inventory,
+                        sales and customer datasets into SQL Server.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Python</span>
+
+                        <span>SQL Server</span>
+
+                        <span>ETL</span>
+
+                        <span>Pandas</span>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                    </div>
+
+                    <h3>LLM Knowledge Assistant</h3>
+
+                    <p>
+
+                        Built an enterprise AI assistant capable of
+                        retrieving organizational knowledge using
+                        Large Language Models and Prompt Engineering.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Azure OpenAI</span>
+
+                        <span>Prompt Engineering</span>
+
+                        <span>Python</span>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-heart-pulse"></i>
+
+                    </div>
+
+                    <h3>Digital Newborn AI Framework</h3>
+
+                    <p>
+
+                        Healthcare AI research project applying
+                        Machine Learning to Electronic Health
+                        Records for disease risk prediction.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Machine Learning</span>
+
+                        <span>Healthcare AI</span>
+
+                        <span>Research</span>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                    <h3>Heart Disease Prediction</h3>
+
+                    <p>
+
+                        Developed predictive Machine Learning
+                        models for heart disease prediction,
+                        resulting in a Scopus-indexed publication.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Machine Learning</span>
+
+                        <span>Python</span>
+
+                        <span>Scikit-Learn</span>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-gears"></i>
+
+                    </div>
+
+                    <h3>Business Process Automation</h3>
+
+                    <p>
+
+                        Automated enterprise workflows using Python,
+                        SharePoint automation and Robotic Process
+                        Automation to improve operational efficiency.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Python</span>
+
+                        <span>Automation</span>
+
+                        <span>SharePoint</span>
+
+                        <span>RPA</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="education">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Education</h2>
+
+                <p>
+
+                    Academic background and specialization in Artificial Intelligence.
+
+                </p>
+
+            </div>
+
+            <div class="education-grid">
+
+                <div class="education-card">
+
+                    <div class="edu-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+                    <h3>
+
+                        MSc Software Design with Artificial Intelligence
+
+                    </h3>
+
+                    <h4>
+
+                        Technological University of the Shannon
+
+                    </h4>
+
+                    <span class="edu-year">
+
+                        2024 – 2025 | Ireland
+
+                    </span>
+
+                    <p>
+
+                        Specialized in Artificial Intelligence,
+                        Machine Learning, NLP, Generative AI,
+                        AI Ethics and Software Engineering.
+
+                    </p>
+
+                </div>
+
+
+
+
+
+                <div class="education-card">
+
+                    <div class="edu-icon">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Bachelor of Technology
+
+                    </h3>
+
+                    <h4>
+
+                        Computer Science Engineering
+
+                    </h4>
+
+                    <span class="edu-year">
+
+                        2020 – 2024 | India
+
+                    </span>
+
+                    <p>
+
+                        Studied Data Structures,
+                        Algorithms,
+                        Machine Learning,
+                        Operating Systems,
+                        Software Engineering
+                        and Database Systems.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ================= RESEARCH ================= -->
+
+    <section id="research" class="research">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Research & Publications
+
+                </h2>
+
+            </div>
+
+            <div class="research-grid">
+
+                <div class="research-card">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <h3>
+
+                        Heart Disease Prediction using Machine Learning
+
+                    </h3>
+
+                    <p>
+
+                        Published a Scopus-indexed research paper
+                        demonstrating predictive Machine Learning
+                        models for cardiovascular disease prediction.
+
+                    </p>
+
+                </div>
+
+
+
+
+
+                <div class="research-card">
+
+                    <i class="fa-solid fa-microscope"></i>
+
+                    <h3>
+
+                        Digital Newborn AI Framework
+
+                    </h3>
+
+                    <p>
+
+                        Contributed to AI-based healthcare research
+                        using Electronic Health Records,
+                        biomedical datasets and predictive analytics.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
+    <section id="certifications" class="certifications">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Technical Expertise
+
+                </h2>
+
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-card">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <h3>
+
+                        Artificial Intelligence
+
+                    </h3>
+
+                </div>
+
+                <div class="cert-card">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <h3>
+
+                        Machine Learning
+
+                    </h3>
+
+                </div>
+
+                <div class="cert-card">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h3>
+
+                        SQL Server & ETL
+
+                    </h3>
+
+                </div>
+
+                <div class="cert-card">
+
+                    <i class="fa-solid fa-cloud"></i>
+
+                    <h3>
+
+                        Azure OpenAI
+
+                    </h3>
+
+                </div>
+
+                <div class="cert-card">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h3>
+
+                        Python Development
+
+                    </h3>
+
+                </div>
+
+                <div class="cert-card">
+
+                    <i class="fa-solid fa-gears"></i>
+
+                    <h3>
+
+                        Robotic Process Automation
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Let's Connect</h2>
+
+                <p>
+
+                    I'm always interested in discussing Artificial Intelligence,
+                    Machine Learning, Data Engineering, Automation and Research opportunities.
+
+                </p>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <h3>Email</h3>
+
+                    <a href="mailto:20khushisharma01@gmail.com">
+
+                        20khushisharma01@gmail.com
+
+                    </a>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <h3>Phone</h3>
+
+                    <p>
+
+                        +353 89 945 9200
+
+                    </p>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h3>Location</h3>
+
+                    <p>
+
+                        Ireland
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="social-links">
+
+                <a href="mailto:20khushisharma01@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+                <a href="https://github.com/khushisharma2001"
+                    target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/khushi-sharma-a45b4a179/"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+            </div>
+
+
+
+
+
+            <div class="resume-download">
+
+                <a href="assets/Khushi_Sharma_Resume.pdf"
+                    target="_blank"
+                    class="btn">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download Resume
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <h2>
+
+                Khushi Sharma
+
+            </h2>
+
+            <p>
+
+                AI & Data Developer • Machine Learning Engineer • Data Engineer
+
+            </p>
+
+            <div class="footer-social">
+
+                <a href="mailto:20khushisharma01@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+                <a href="https://github.com/khushisharma2001"
+                    target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/khushi-sharma-a45b4a179/"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+            </div>
+
+            <p class="copyright">
+
+                © 2026 Khushi Sharma. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
